@@ -1,0 +1,13 @@
+.botao {
+    width: 10em;
+    height: 5em;
+    border-radius: 10px;
+    background-color: #6278F7;
+    color: #FFF;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.25em;
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+}
