@@ -49,7 +49,8 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario times={listaDeTimes.map(time => time.nome)} aoColaboradorCadastrado={colaborador => setColaboradores([...colaboradores, colaborador])} title="Preencha os dados para criar o card do colaborador" />
-      {listaDeTimes.map(time => <Time nome={time.nome} corDeFundo={time.corDeFundo} corDeDestaque={time.corDeDestaque} />)}
+
+      {listaDeTimes.map(time => <Time key={time.nome} nome={time.nome} corDeFundo={time.corDeFundo} corDeDestaque={time.corDeDestaque} />)}
     </div>
   );
 }
