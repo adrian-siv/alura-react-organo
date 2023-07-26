@@ -1,0 +1,20 @@
+.rodape {
+    background: #6278F7;
+    background-image: url(../../../public/imagens/fundo.png);
+    background-repeat: space;
+    height: 213px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape .icones img {
+    padding: 1.0625rem;
+}
+
+.rodape p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: 500;
+}

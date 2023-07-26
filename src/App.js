@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
+import Rodape from './componentes/Rodape';
 
 function App() {
   
@@ -68,6 +69,8 @@ function App() {
           <p className='sem-colaboradores'>Ainda não há nenhum colaborador cadastrado.<br/> Preencha o formulário para começar a organizar sua empresa ;)</p>
         </div>
       )}
+
+      <Rodape/>
     </div>
   );
 }
