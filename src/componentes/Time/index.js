@@ -3,7 +3,7 @@ import './Time.css';
 
 const Time = (props) => {
     return (
-        <section style={{backgroundColor: props.corDeFundo}} className='time'>
+        <section className='time' style={{backgroundColor: props.corDeFundo}}>
             <h3 style={{borderColor: props.corDeDestaque}}>{props.nome}</h3>
             <div className='caixaDeColaboradores'>
                 <Colaborador/>
