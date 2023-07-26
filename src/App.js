@@ -55,13 +55,19 @@ function App() {
       titulo="Preencha os dados para criar o card do colaborador"
       />
 
-      {listaDeTimes.map(time => <Time
-        key={time.nome} 
-        nome={time.nome}
-        corDeFundo={time.corDeFundo}
-        corDeDestaque={time.corDeDestaque}
-        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
-      />)}
+      {colaboradores.length > 0 ? (
+        listaDeTimes.map(time => <Time
+          key={time.nome} 
+          nome={time.nome}
+          corDeFundo={time.corDeFundo}
+          corDeDestaque={time.corDeDestaque}
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+        />)
+      ): (
+        <div>
+          <p className='sem-colaboradores'>Ainda não há nenhum colaborador cadastrado.<br/> Preencha o formulário para começar a organizar sua empresa ;)</p>
+        </div>
+      )}
     </div>
   );
 }
