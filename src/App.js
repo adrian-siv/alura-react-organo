@@ -52,7 +52,7 @@ function App() {
       <Formulario 
       times={listaDeTimes.map(time => time.nome)}
       aoColaboradorCadastrado={colaborador => setColaboradores([...colaboradores, colaborador])}
-      title="Preencha os dados para criar o card do colaborador"
+      titulo="Preencha os dados para criar o card do colaborador"
       />
 
       {listaDeTimes.map(time => <Time
