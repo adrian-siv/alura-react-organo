@@ -21,6 +21,9 @@ const Formulario = ({aoColaboradorCadastrado, titulo, times}) => {
 			imagem,
 			time
 		})
+		setNome("");
+		setCargo("");
+		setImagem("");
 	}
 
 	return (
