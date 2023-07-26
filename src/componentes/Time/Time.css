@@ -14,3 +14,9 @@
     display: inline-block;
     padding-bottom: 0.625rem;
 }
+
+.caixaDeColaboradores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

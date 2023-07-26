@@ -1,0 +1,47 @@
+.colaborador {
+    width: 262px;
+    height: 272px;
+    padding: 0 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.colaborador .superior {
+    background-color: #57C278;
+    height: 33%;
+    border-radius: 10px 10px 0 0;
+}
+
+.colaborador .superior img {
+    width: 120px;
+    max-width: 100%;
+    border-radius: 50%;
+    position: relative;
+    bottom: -40px;
+}
+
+.colaborador .inferior {
+    background-color: #FFF;
+    height: 67%;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Montserrat;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.colaborador .inferior h4 {
+    margin: 33% 0 10px 0;
+    color: #6278F7;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.colaborador .inferior h5 {
+    margin: 0 0 27px;
+    padding: 0 31px;
+    color: #212121;
+    font-size: 1rem;
+    font-weight: 400;
+}
