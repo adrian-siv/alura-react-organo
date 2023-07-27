@@ -9,12 +9,11 @@ const Formulario = ({aoColaboradorCadastrado, titulo, times}) => {
 	const [nome, setNome] = useState('');
 	const [cargo, setCargo] = useState('');
 	const [imagem, setImagem] = useState('');
-	const [time, setTime] = useState('Programação');
+	const [time, setTime] = useState('');
 
 	
 	const aoSalvar = (evento) => {
 		evento.preventDefault();
-		console.log(nome, cargo, imagem, time);
 		aoColaboradorCadastrado({
 			nome,
 			cargo,
@@ -24,6 +23,7 @@ const Formulario = ({aoColaboradorCadastrado, titulo, times}) => {
 		setNome("");
 		setCargo("");
 		setImagem("");
+		setTime("");
 	}
 
 	return (
@@ -33,7 +33,7 @@ const Formulario = ({aoColaboradorCadastrado, titulo, times}) => {
 				<CampoTexto valor={nome} aoAlterado={valor => setNome(valor)} required label="Nome" placeholder="Digite seu nome" />
 				<CampoTexto valor={cargo} aoAlterado={valor => setCargo(valor)} required label="Cargo" placeholder="Digite seu cargo" />
 				<CampoTexto valor={imagem} aoAlterado={valor => setImagem(valor)} label="Imagem" placeholder="Digite o endereço da imagem" />
-				<ListaSuspensa valor={time} aoAlterado={valor => setTime(valor)} label="Time" itens={times}/>
+				<ListaSuspensa valor={time} aoAlterado={valor => setTime(valor)} required label="Time" itens={times}/>
 				<Botao>
 					Criar card
 				</Botao>

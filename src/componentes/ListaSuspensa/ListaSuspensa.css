@@ -21,3 +21,7 @@
     padding: 24px;
     box-sizing: border-box;
 }
+
+.lista-suspensa select:invalid {
+    color: #777777;
+}
