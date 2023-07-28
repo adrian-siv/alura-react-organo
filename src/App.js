@@ -3,6 +3,7 @@ import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
 import Rodape from './componentes/Rodape';
+import DelimitadorSessao from './componentes/DelimitadorSessao';
 
 function App() {
   
@@ -56,6 +57,7 @@ function App() {
       titulo="Preencha os dados para criar o card do colaborador"
       />
 
+      <DelimitadorSessao titulo="Minha Organização"/>
       {colaboradores.length > 0 ? (
         listaDeTimes.map(time => <Time
           key={time.nome} 
